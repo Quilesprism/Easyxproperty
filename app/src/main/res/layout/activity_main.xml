@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="229dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:text=" Por favor, ingrese su cuenta para poder continuar."
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#255FA9"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="136dp"
+        android:backgroundTint="#D12417"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPIN" />
+
+    <EditText
+        android:id="@+id/editTextPIN"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#2B2D30"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCuenta" />
+
+    <EditText
+        android:id="@+id/editTextCuenta"
+        android:layout_width="314dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="User"
+        android:inputType="text"
+        android:textColor="#2B2D30"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
